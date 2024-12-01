@@ -10,7 +10,6 @@ const lines = content.split('\n')
 let list_a = []
 let list_b = []
 
-
 for (let line of lines) {
     let [first_char, last_char] = line.split("   ");
     list_a.push(parseInt(first_char));
@@ -29,7 +28,6 @@ for (let i = 0; i < list_a.length; i++) {
 console.log("Part 1: ", total)
 
 // part 2
-
 let score = 0;
 for (let i = 0; i < list_a.length; i++) {
     let target = list_a[i];
@@ -40,7 +38,4 @@ for (let i = 0; i < list_a.length; i++) {
     }
     score += (num_occurrences * target)   
 }
-
-
-
 console.log("Part 2: ", score)
