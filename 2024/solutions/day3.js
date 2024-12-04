@@ -6,8 +6,6 @@ const content = fs.readFileSync(
 
 
 const regexp = /do\(\)|don't\(\)|mul\(\d{1,3},\d{1,3}\)/g;
-const str = 'mul(232,323)';
-
 let ans = 0
 const array = [...content.matchAll(regexp)];
 
