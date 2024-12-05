@@ -22,9 +22,7 @@ for (let line of lines) {
     matrix.push(arr)
 }
 
-let characters = [
-    'X', 'M', 'A', 'S'
-]
+let characters = [ 'X', 'M', 'A', 'S' ]
 let num_occurences = 0
 
 for (let x = 1; x < matrix.length - 1; x++) {
